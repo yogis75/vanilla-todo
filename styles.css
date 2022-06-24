@@ -73,7 +73,7 @@ form button:hover {
 
 .trash-btn,
 .completed-btn {
-  background: #b13935b2;
+  background: #fa8072;
   color: white;
   border: none;
   padding: 1rem;
@@ -82,7 +82,7 @@ form button:hover {
 }
 
 .completed-btn {
-  background: rgba(7, 109, 150, 0.616);
+  background: #00a86b;
 }
 
 .todo-item {
@@ -102,4 +102,39 @@ form button:hover {
 .fall {
   transform: translateY(8rem) rotatez(20deg);
   opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #00c3dd;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #00c3dd;
+  padding: 0.5rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #00c3dd;
 }
